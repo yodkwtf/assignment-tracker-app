@@ -1,0 +1,18 @@
+const FormRow = ({ label, type, name, placeholder, value, handleChange }) => {
+  return (
+    <div className="form-row">
+      <label htmlFor={name} className="form-label">
+        {label || name}
+      </label>
+      <input
+        type={type || 'text'}
+        name={name}
+        placeholder={placeholder || `Enter ${name}`}
+        value={value}
+        onChange={handleChange}
+        className="form-input"
+      />
+    </div>
+  );
+};
+export default FormRow;
