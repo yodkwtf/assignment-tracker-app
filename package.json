@@ -1,7 +1,7 @@
 {
-  "name": "assignment-tracker",
+  "name": "project-tracker",
   "version": "1.0.0",
-  "description": "A MERN stack application to track assignments and their status for college students.",
+  "description": "A MERN stack application where users can track projects and their status.",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yodkwtf/assignment-tracker-app.git"
+    "url": "git+https://github.com/yodkwtf/project-tracker-mern.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yodkwtf/assignment-tracker-app/issues"
+    "url": "https://github.com/yodkwtf/project-tracker-app/issues"
   },
-  "homepage": "https://github.com/yodkwtf/assignment-tracker-app#readme",
+  "homepage": "https://github.com/yodkwtf/project-tracker-app#readme",
   "devDependencies": {
     "nodemon": "^2.0.19"
   },
