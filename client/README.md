@@ -26,6 +26,7 @@
 - [] Explore converting login and register pages to modals instead
 - [] Style the form and logo
 - [] Add confirm password functionality
+- [] Improve the _alertMessage_
 
 ## Finishing Touches
 
