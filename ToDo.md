@@ -38,4 +38,4 @@
 
 #### User Model
 
-- [] Add more fields for user's profile
+- [] Add more fields for user's profile (username, image, social links, etc.)
