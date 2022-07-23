@@ -11,7 +11,6 @@ const errorMiddleware = (err, req, res, next) => {
   // check missing fields
   if (err.name === 'ValidationError') {
     defaultError.statusCode = StatusCodes.BAD_REQUEST;
-    // defaultError.msg = err.message;
     defaultError.msg = Object.values(err.errors)
       .map((e) => e.message)
       .join(', ');
@@ -23,7 +22,6 @@ const errorMiddleware = (err, req, res, next) => {
     defaultError.msg = `${Object.keys(err.keyValue)} already exists`;
   }
 
-  // res.status(defaultError.statusCode).json({ msg: err });
   res.status(defaultError.statusCode).json({ msg: defaultError.msg });
 };
 
