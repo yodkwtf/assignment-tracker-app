@@ -1,10 +1,14 @@
+import User from '../models/User.js';
+import { StatusCodes } from 'http-status-codes';
+
 /**
  * @desc    Register New User
  * @route   POST /api/v1/user/register
  * @access  Public
  */
 const registerUser = async (req, res) => {
-  res.send('Register User');
+  const user = await User.create(req.body);
+  res.status(StatusCodes.CREATED).json({ user });
 };
 
 /**
